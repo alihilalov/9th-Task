@@ -4,6 +4,7 @@ const greet = (name) => {
 };
 console.log(greet("Ziya"));
 console.log(greet("Ziya", "Ali"));
+
 console.log("-----------------------");
 console.log("Part 2 :");
 
@@ -23,12 +24,12 @@ if (num > 0) {
 console.log("-----------------------");
 console.log("Part 3 :");
 
-let sum = 0;
+let sumRest = 0;
 const sumAll = (...rest) => {
   for (let i = 0; i < rest.length; i++) {
-    sum = sum + rest[i];
+    sumRest = sumRest + rest[i];
   }
-  console.log(sum);
+  console.log(sumRest);
 };
 sumAll(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
@@ -47,3 +48,21 @@ const third = () => {
   console.log("This is my third arrow function");
 };
 third();
+
+console.log("-----------------------");
+console.log("Part 5:");
+let sum = 0;
+const sumNum = (others) => {
+  for (let i = 0; i < others.length; i++) {
+    sum = sum + others[i];
+  }
+  return sum;
+};
+let arr = [1, 2, 3, 34, 4, 56];
+sumNum(arr);
+
+const sumMult = () => {
+  return (mult = sum * 8);
+};
+console.log(sumMult());
+console.log("s");
